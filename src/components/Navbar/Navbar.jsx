@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {Link} from 'react-router-dom'
-import {Button} from './Button'
+import {Button} from '../Button/Button'
 import './Navbar.css';
 
 
@@ -30,7 +30,8 @@ function Navbar() {
             <nav className="navbar">
                 <div className="navbar-container">
                     <Link to="/" className="navbar-logo">
-                        Roxana G <i className='fab fa-typo3'/>
+                       RG <i class="far fa-star"></i>
+                       
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
@@ -57,11 +58,9 @@ function Navbar() {
                             </Link>
                         </li>
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>Hello</Button>}
+                    {/* {button && <Button buttonStyle='btn--outline' >Home</Button>} */}
                 </div>
             </nav>
         </div>
     )
-}
-
-export default Navbar
+} export default Navbar

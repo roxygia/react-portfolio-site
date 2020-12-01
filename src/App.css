@@ -20,13 +20,13 @@
 
 /* 1. Configuration
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap'); */
 /* Custom Properties */
 :root {
   /* Main colours */
   --primary: rgb(255,255,255);
   --dark: rgb(65, 60, 88);/* #413C58 */
-  --medium: rgb(53,135,164);/* #3587A4  */
+  --medium:  #1f98f4;
   --light: rgb(193,223,240);/* #C1DFF0 */
   --light-accent: rgb(254,215,102);/* #FED766 */
   --accent: rgb(255,88,87);/* #FE4A49 */
@@ -35,13 +35,16 @@
   --fw-bold: 600;
 
   /* Font Family */
-  --ff-body:  'PT Sans', sans-serif;
-  --ff-title: 'Bebas Neue', cursive;
+  --ff-body:  -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  --ff-title: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
   /* Font size */
-  --fs-h1: 2.1rem;
+  --fs-h1: 3.1rem;
   --fs-h2: 1.5rem;
-  --fs-h3: 1.0rem;
-  --fs-body: 0.8rem;
+  --fs-h3: 1.2rem;
+  --fs-body: 1.1rem;
   /* box-shadow */
   --bs: 0.25em 0.25em 0.75em rgba(61,64,91,.25), 
         0.125em 0.125em 0.25em rgba(61,64,91,.15);
@@ -51,9 +54,9 @@
 
 @media (min-width: 900px) {
   :root {
-    --fs-h1: 2.5em;
-    --fs-h2: 1.7em;
-    --fs-h3: 1.2em;
+    --fs-h1: 3.5rem;
+    --fs-h2: 1.7rem;
+    --fs-h3: 1.2rem;
     --fs-body: 1.1rem;
   }
 } 
@@ -65,28 +68,26 @@
   font-family: 'PT Sans', sans-serif;
 }
 
+h1 {
+  color: #fff;
+  font-size: var(--fs-h1);
+  margin-top: -100px;
+  text-align: center;
+  
+}
+
 .home,
-.services,
-.products,
-.sign-up {
+.projects,
+.about, .contact {
   display: flex;
   height: 90vh;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
+  padding-top: 3rem;
 }
 
-.services {
-  background-image: url('./images/img-2.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
-.products {
-  background-image: url('./images/img-1.jpg');
+.projects {
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
@@ -94,8 +95,7 @@
   font-size: 100px;
 }
 
-.sign-up {
-  background-image: url('./images/img-8.jpg');
+.new-section {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

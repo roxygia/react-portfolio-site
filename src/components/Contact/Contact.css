@@ -1,0 +1,87 @@
+label {
+    font-size: var(--fs-h2);
+  }
+  
+
+  .medium-form {
+    width: 85vw;
+    padding: 4% 0 0;
+    margin: auto;
+  }
+  @media screen and (min-width: 600px) {
+    .medium-form {
+      max-width: 550px;
+      width: 60vw;
+    }
+  }
+  
+  
+  form {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+    padding: 8px 20px;
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease-out;
+    border-radius: 10px;
+
+  }
+  
+  .form-page form {
+    text-align: left;
+  }
+  
+  form input, textarea  {
+    font-family: var(--ff-body);
+    outline: 0;
+    background: #fff;
+    width: 100%;
+    border: 0;
+    margin: 0 0 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: var(--fs-body);
+  }
+
+
+  
+  form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: var(--fs-body);
+    
+    
+  }
+  form .message a {
+    color: #555;
+    text-decoration: none;
+  }
+  
+  body {
+    background: #fcfcfc;
+    font-family: var(--ff-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;      
+  }
+  
+  form a {
+      display: inline;
+      font-size: var(--fs-body);
+      color: var(--dark); 
+      text-decoration: none;
+     
+  }
+
+  form button {
+    background-color: transparent;
+    color: #fff;
+    padding: 8px 20px;
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease-out;
+    margin-bottom: 20px;
+    font-size: var(--fs-h3);
+  }
