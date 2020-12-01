@@ -9,7 +9,7 @@ function Navbar() {
     const [button, setButton] = useState(true);
 
     const handleClick = () => setClick(!click);
-    const closeMobileMenu = () => setClick(!click);
+    const closeMobileMenu = () => setClick(false);
 
     const showButton = () => {
         if(window.innerWidth<= 960) {
@@ -29,7 +29,7 @@ function Navbar() {
         <div>
             <nav className="navbar">
                 <div className="navbar-container">
-                    <Link to="/" className="navbar-logo">
+                    <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                        RG <i class="far fa-star"></i>
                        
                     </Link>
@@ -53,12 +53,14 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/contact' className='nav-links-mobile' onClick={closeMobileMenu}>
                                 Contact 
                             </Link>
                         </li>
                     </ul>
-                    {/* {button && <Button buttonStyle='btn--outline' >Home</Button>} */}
+                    {button && <Button buttonStyle='btn--outline' onClick='/contact'>Contact</Button>}
+
+
                 </div>
             </nav>
         </div>

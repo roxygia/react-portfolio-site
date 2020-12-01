@@ -11,7 +11,7 @@
 
 .about__img{
     width: 80%;
-    height: 80%;
+    height: 100%;
     border-radius: 10px;
     filter: sepia(20%);
     transition: all 0.2s linear;
@@ -39,7 +39,7 @@
     width: 80%;
 }  
 
-  @media (min-width: 900px) {
+  @media (min-width: 600px) {
     .about__wrapper {
         flex-flow: row;
         width: 90%;

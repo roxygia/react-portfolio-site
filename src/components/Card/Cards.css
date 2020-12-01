@@ -1,6 +1,6 @@
 .cards {
   padding: 4rem;
-  background: #fff;
+  background: var(--primary);
 }
 
 h2 {
@@ -63,9 +63,9 @@ h2 {
   margin-left: 10px;
   padding: 6px 8px;
   max-width: calc((100%) - 60px);
-  font-size: 12px;
+  font-size: var(--fs-body);
   font-weight: 700;
-  color: #fff;
+  color: var(--primary);
   background-color: var(--medium);
   box-sizing: border-box;
 }
@@ -94,7 +94,7 @@ h2 {
 }
 
 .cards__item__text {
-  color: #252e48;
+  color: var(--dark);
   font-size: 18px;
   line-height: 24px;
 }

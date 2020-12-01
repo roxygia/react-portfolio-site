@@ -50,7 +50,7 @@
   }
   
   .nav-links {
-    color: #fff;
+    color: var(--primary);
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -59,14 +59,14 @@
   }
   
   .nav-links:hover {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid var(--primary);
     transition: all 0.2s ease-out;
     background-color: #242220;
   
   }
   
   .fa-bars {
-    color: #fff;
+    color: var(--primary);
   }
   
   .nav-links-mobile {
@@ -95,7 +95,7 @@
     }
   
     .nav-menu.active {
-      background: #242222;
+      background: var(--dark);
       left: 0;
       opacity: 1;
       transition: all 0.5s ease;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import Fade from 'react-reveal';
 import video1 from '../../videos/video-1.mp4' 
@@ -36,16 +36,29 @@ function Contact () {
       });
   };
 
+  const [isDesktop, setIsDesktop] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth > 769) {
+      setIsDesktop(true);
+      setIsMobile(false);
+    } else {
+      setIsMobile(true);
+      setIsDesktop(false);
+    }
+  }, []);
+
   return (
     <section className="contact">
       <video src={video1} autoPlay loop muted />
         <div>
           <h1>
-            <Fade bottom duration={1000} delay={900} distance="30px">
+           <Fade left={isDesktop} bottom={isMobile} duration={3000} delay={1000} distance="30px">
             Want to get in touch?
             </Fade>
           </h1>
-          <Fade bottom duration={1000} delay={900} distance="30px">
+          <Fade bottom duration={3000} delay={2000} distance="30px">
           <div className="medium-form">
         <form onSubmit={handleOnSubmit}>
           <label htmlFor="email">Email:</label>

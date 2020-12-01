@@ -23,7 +23,7 @@ label {
     padding: 10px;
     text-align: center;
     background-color: transparent;
-    color: #fff;
+    color: var(--primary);
     padding: 8px 20px;
     border: 1px solid var(--primary);
     transition: all 0.3s ease-out;
@@ -51,7 +51,7 @@ label {
   
   form .message {
     margin: 15px 0 0;
-    color: #b3b3b3;
+    color: var(--primary);
     font-size: var(--fs-body);
     
     
@@ -62,7 +62,7 @@ label {
   }
   
   body {
-    background: #fcfcfc;
+    background: var(--primary);
     font-family: var(--ff-body);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;      
@@ -78,7 +78,7 @@ label {
 
   form button {
     background-color: transparent;
-    color: #fff;
+    color: var(--primary);
     padding: 8px 20px;
     border: 1px solid var(--primary);
     transition: all 0.3s ease-out;

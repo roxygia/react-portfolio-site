@@ -9,13 +9,13 @@
 
 .btn--primary {
   background-color: var(--primary);
-  color: #242424;
+  color: var(--dark);
   border: 1px solid var(--primary);
 }
 
 .btn--outline {
   background-color: transparent;
-  color: #fff;
+  color: var(--primary);
   padding: 8px 20px;
   border: 1px solid var(--primary);
   transition: all 0.3s ease-out;
@@ -23,7 +23,7 @@
 
 .btn--medium {
   padding: 8px 20px;
-  font-size: 18px;
+  font-size: var(--fs-h3);
 }
 
 .btn--large {
@@ -35,7 +35,7 @@
 .btn--medium:hover, 
 form button:hover {
   transition: all 0.3s ease-out;
-  background: #fff;
-  color: #242424;
+  background: var(--primary);
+  color: var(--dark);
   transition: 250ms;
 }

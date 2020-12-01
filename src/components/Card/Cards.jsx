@@ -5,15 +5,18 @@ import image1 from '../../images/img-techforme.JPG';
 import image2 from '../../images/img-traveld.JPG';
 import image3 from '../../images/img-shecodesnews.JPG';
 import image4 from '../../images/img-python-data.JPG';
+import Fade from 'react-reveal';
 
 function Cards() {
   return (
-    <div className='cards'>
-      <h2>Check out my latest projects! </h2>
+    <div className='cards' id="projects">
+      <Fade bottom duration={2000} delay={1000} distance="30px">
+      <h2>Check out my latest projects! </h2></Fade>
       <div className='cards__container'>
+      <Fade bottom duration={2000} delay={1000} distance="30px">
         <div className='cards__wrapper'>
           <ul className='cards__items'>
-            <CardItem
+          <CardItem
               src={image1}
               text='Directory to connect minorites in tech to providers of opportunities in a convenient single location'
               label='DRF React Heroku'
@@ -41,6 +44,7 @@ function Cards() {
             />
           </ul>
         </div>
+        </Fade>
       </div>
     </div>
   );
