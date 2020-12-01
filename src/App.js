@@ -1,15 +1,19 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './components/pages/Home'
 import Projects from './components/pages/Projects'
 import About from './components/pages/About'
 import Contact from './components/pages/Contact'
 
+
+
 function App() {
   return (
     <div>
       <Router>
+      <ScrollToTop />
         <Navbar/>
         <Switch>
           <Route path='/projects' exact component={Projects} />

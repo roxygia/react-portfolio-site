@@ -92,6 +92,12 @@
   font-size: 24px;
 }
 
+.social-icon-link:hover {
+  color: var(--medium);
+  font-size: 24px;
+  transition: 0.3s ease-out;
+}
+
 .social-media {
   max-width: 1000px;
   width: 100%;

@@ -12,20 +12,20 @@ function Footer() {
       </div>
 
 
-      <section class='social-media'>
-        <div class='social-media-wrap'>
-          <small class='website-rights'>Roxana Gianazza © 2020</small>
-          <div class='social-icons'>
+      <section className='social-media'>
+        <div className='social-media-wrap'>
+          <small className='website-rights'>Roxana Gianazza © 2020</small>
+          <div className='social-icons'>
 
             <a
-              class='social-icon-link linkedin'
+              className='social-icon-link'
               href='https://www.linkedin.com/in/roxana-gianazza2020/'
               aria-label='LinkedIn'
             >
               <i class='fab fa-linkedin' />
             </a> 
             <a
-              class='social-icon-link github'
+              className='social-icon-link'
               href='https://github.com/roxygia'
               aria-label='GitHub'
             >
