@@ -16,46 +16,21 @@ function Footer() {
         <div class='social-media-wrap'>
           <small class='website-rights'>Roxana Gianazza © 2020</small>
           <div class='social-icons'>
-            <Link
-              class='social-icon-link facebook'
-              to='/'
-              target='_blank'
-              aria-label='Facebook'
-            >
-              <i class='fab fa-facebook-f' />
-            </Link>
-            <Link
-              class='social-icon-link instagram'
-              to='/'
-              target='_blank'
-              aria-label='Instagram'
-            >
-              <i class='fab fa-instagram' />
-            </Link>
-            <Link
-              class='social-icon-link youtube'
-              to='/'
-              target='_blank'
-              aria-label='Youtube'
-            >
-              <i class='fab fa-youtube' />
-            </Link>
-            <Link
-              class='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='Twitter'
-            >
-              <i class='fab fa-twitter' />
-            </Link>
-            <Link
-              class='social-icon-link twitter'
-              to='/'
-              target='_blank'
+
+            <a
+              class='social-icon-link linkedin'
+              href='https://www.linkedin.com/in/roxana-gianazza2020/'
               aria-label='LinkedIn'
             >
               <i class='fab fa-linkedin' />
-            </Link>
+            </a> 
+            <a
+              class='social-icon-link github'
+              href='https://github.com/roxygia'
+              aria-label='GitHub'
+            >
+              <i class='fab fa-github' />
+            </a>
             
           </div>
           

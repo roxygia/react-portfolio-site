@@ -29,7 +29,7 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src={image3}
-              text='News website news website that allows users to read news stories, and authors to create them.'
+              text='News website that allows users to read the latest stories, and authors to create them.'
               label='Django'
               path='https://github.com/roxygia/she-codes-news'
             />
